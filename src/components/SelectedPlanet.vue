@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    fetch("https://swapi.dev/api/planets/" + this.id)
+    fetch("http://swapi.dev/api/planets/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.planet = data;

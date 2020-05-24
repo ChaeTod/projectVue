@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    fetch("https://swapi.dev/api/vehicles/" + this.id)
+    fetch("http://swapi.dev/api/vehicles/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.vehicle = data;

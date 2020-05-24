@@ -19,7 +19,7 @@ export default {
     };
   },
   created() {
-    fetch("https://swapi.dev/api/people/" + this.id)
+    fetch("http://swapi.dev/api/people/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.person = data;

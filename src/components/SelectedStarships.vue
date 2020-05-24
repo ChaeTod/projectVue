@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    fetch("https://swapi.dev/api/starships/" + this.id)
+    fetch("http://swapi.dev/api/starships/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.starship = data;

@@ -18,7 +18,7 @@ export default {
     };
   },
   created() {
-    fetch("https://swapi.dev/api/species/" + this.id)
+    fetch("http://swapi.dev/api/species/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.specie = data;
