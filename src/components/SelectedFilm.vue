@@ -34,8 +34,12 @@ export default {
       film: {}
     };
   },
-  created() {
+  mounted() {
     this.fetchData()
+  },
+  watch: {
+    // call again the method if the route changes
+    '$route': 'fetchData'
   },
   methods: {
     fetchData(){
