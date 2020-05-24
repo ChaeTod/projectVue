@@ -10,6 +10,7 @@
 </template>
 
 <script>
+/*
 export default {
   data() {
     return {
@@ -23,6 +24,27 @@ export default {
       .then(data => {
         this.film = data;
       });
+  }
+};
+*/
+export default {
+  data() {
+    return {
+      id: this.$route.params.id,
+      film: {}
+    };
+  },
+  created() {
+    this.fetchData()
+  },
+  methods: {
+    fetchData(){
+    fetch("https" + "://swapi.dev/api/films/" + this.id)
+      .then(response => response.json())
+      .then(data => {
+        this.film = data;
+     });
+    }
   }
 };
 </script>
