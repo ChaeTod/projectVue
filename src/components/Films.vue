@@ -9,7 +9,7 @@
 </template>
 
 <script>
-
+/*
 export default {
   data() {
     return {
@@ -26,11 +26,9 @@ export default {
       });
   }
 };
+*/
 
-/*
 export default {
-///var proxyUrl = 'https:/swapi.dev/api/',
-//targetUrl = 'films',
   data() {
     return {
       films: [],
@@ -46,7 +44,7 @@ export default {
   },
   methods: {
     fetchData(){
-      fetch("https:/swapi.dev/api/films/")
+      fetch("https://swapi.dev/api/films/")
       .then(response => response.json())
       .then(data => {
         this.films = data.results;
@@ -54,7 +52,7 @@ export default {
     }
   }
 };
-*/
+
 </script>
 
 <style >

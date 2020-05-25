@@ -9,6 +9,7 @@
 </template>
 
 <script>
+/*
 export default {
   data() {
     return {
@@ -23,6 +24,32 @@ export default {
       .then(data => {
         this.species = data.results;
       });
+  }
+};
+*/
+
+export default {
+  data() {
+    return {
+      species: [],
+      id: ""
+    };
+  },
+  created() {
+    this.fetchData()
+  },
+  watch: {
+    // call again the method if the route changes
+    '$route': 'fetchData'
+  },
+  methods: {
+    fetchData(){
+      fetch("https://swapi.dev/api/species/")
+      .then(response => response.json())
+      .then(data => {
+        this.species = data.results;
+      });
+    }
   }
 };
 </script>

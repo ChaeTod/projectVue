@@ -9,6 +9,7 @@
 </template>
 
 <script>
+/*
 export default {
   data() {
     return {
@@ -25,6 +26,35 @@ export default {
       });
   }
 };
+*/
+
+export default {
+///var proxyUrl = 'https:/swapi.dev/api/',
+//targetUrl = 'films',
+  data() {
+    return {
+      people: [],
+      id: ""
+    };
+  },
+  created() {
+    this.fetchData()
+  },
+  watch: {
+    // call again the method if the route changes
+    '$route': 'fetchData'
+  },
+  methods: {
+    fetchData(){
+      fetch("https://swapi.dev/api/people/")
+      .then(response => response.json())
+      .then(data => {
+        this.people = data.results;
+      });
+    }
+  }
+};
+
 </script>
 
 <style >
