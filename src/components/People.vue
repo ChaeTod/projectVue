@@ -9,28 +9,8 @@
 </template>
 
 <script>
-/*
-export default {
-  data() {
-    return {
-      people: [],
-      id: ""
-    };
-  },
-  methods: {},
-  created() {
-    fetch("https://swapi.dev/api/people/")
-      .then(response => response.json())
-      .then(data => {
-        this.people = data.results;
-      });
-  }
-};
-*/
 
 export default {
-///var proxyUrl = 'https:/swapi.dev/api/',
-//targetUrl = 'films',
   data() {
     return {
       people: [],

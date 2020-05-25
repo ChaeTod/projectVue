@@ -9,7 +9,6 @@
 </template>
 
 <script>
-/*
 export default {
   data() {
     return {
@@ -17,25 +16,7 @@ export default {
       id: ""
     };
   },
-  methods: {},
   created() {
-    fetch("https://swapi.dev/api/films/")
-      .then(response => response.json())
-      .then(data => {
-        this.films = data.results;
-      });
-  }
-};
-*/
-
-export default {
-  data() {
-    return {
-      films: [],
-      id: ""
-    };
-  },
-  mounted() {
     this.fetchData()
   },
   watch: {

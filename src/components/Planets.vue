@@ -9,25 +9,6 @@
 </template>
 
 <script>
-/*
-export default {
-  data() {
-    return {
-      planets: [],
-      id: ""
-    };
-  },
-  methods: {},
-  created() {
-    fetch("https://swapi.dev/api/planets/")
-      .then(response => response.json())
-      .then(data => {
-        this.planets = data.results;
-      });
-  }
-};
-*/
-
 export default {
   data() {
     return {

@@ -9,25 +9,6 @@
 </template>
 
 <script>
-/*
-export default {
-  data() {
-    return {
-      species: [],
-      id: ""
-    };
-  },
-  methods: {},
-  created() {
-    fetch("https://swapi.dev/api/species/")
-      .then(response => response.json())
-      .then(data => {
-        this.species = data.results;
-      });
-  }
-};
-*/
-
 export default {
   data() {
     return {
