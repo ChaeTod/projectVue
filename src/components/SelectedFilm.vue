@@ -10,7 +10,7 @@
 </template>
 
 <script>
-/*
+
 export default {
   data() {
     return {
@@ -19,14 +19,14 @@ export default {
     };
   },
   created() {
-    fetch("https" + "://swapi.dev/api/films/" + this.id)
+    fetch("https://swapi.dev/api/films/" + this.id)
       .then(response => response.json())
       .then(data => {
         this.film = data;
       });
   }
 };
-*/
+/*
 export default {
   data() {
     return {
@@ -51,6 +51,7 @@ export default {
     }
   }
 };
+*/
 </script>
 
 <style>
