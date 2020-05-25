@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     fetchData(){
-      var proxyUrl = 'https:/swapi.dev/api/';
+      var proxyUrl = 'https://swapi.dev/api/';
       var targetUrl = 'films';
       //fetch("https:/swapi.dev/api/films/")
     fetch(proxyUrl + targetUrl)
